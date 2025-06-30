@@ -61,7 +61,6 @@ document.querySelector(".login-signup .login #login-form").addEventListener("sub
       return;
     }
 
-    // لو الإيميل صحيح
     alert("go to your E-mail");
    
   });
