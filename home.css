@@ -1,0 +1,189 @@
+/****************************global styling**********************************/
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+font-family: Poppins;
+}
+
+
+.home-header{
+
+    background-color: rgba(251, 235, 181, 1);
+ 
+ 
+  gap: 20px;
+  padding: 20px; 
+  overflow: hidden;
+}
+
+.home-header img {
+  width: 55%;
+}
+
+ header .text{  padding-left: 10%;
+    display: inline-block;}
+.home-header h2 {
+    font-weight: 500;
+    font-size: 64px;
+}
+.home-cta{
+font-weight: 500;
+font-size: 24px;
+margin-top: 35px;
+cursor: pointer;
+position: relative;
+}
+.home-cta::after {
+    content: "";
+    display: inline-block;
+    width: 23%;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: -13px;
+    left: 0px;
+}
+/************************/
+.home-section-two{
+  
+    background-color: rgba(250, 244, 244, 1);}
+   .home-section-two img{width:90%
+  
+  }
+  .home-card {
+  
+    width: 50%;
+}
+.home-card .image {
+    width: 100%;
+    text-align: end;
+    overflow: hidden;
+    height: 80%;
+}
+.home-card .home-cta {
+    margin-left: 15vw;
+    margin-top: 0px;
+    
+}
+/***************************/
+.foryou{height: 100vh;
+
+padding: 5vh;}
+.for-you-card img{
+width:100%;
+height:70%;
+margin-bottom: 3vh;
+
+}
+.for-you-card {font-weight: 400;
+font-size: 16px;
+text-align: start;}
+.for-you-card .price{font-weight:
+500;
+font-size:
+24px}
+
+
+.foryou .home-cta::after {
+    width: 10%;
+    bottom: -7px;
+    left: 50%;
+    transform: translate(-50%);
+}
+/********************************/
+.sofa{background-color: rgba(255, 249, 229, 1);
+height:85vh;
+overflow: hidden;}
+.sofa img {
+    position: relative;
+    height: 132%;
+    top: -19%;
+}
+.sofa p{font-size: 25px;}
+.sofa span{font-weight: 
+700;
+font-Size:
+48px;}
+.sofa-order-btn {
+    padding-block: 17px;
+    font-size: 20px;
+    background: transparent;
+    padding-inline: 75px;
+}
+.sofa-order-btn:hover{ background-color: white;}
+/*****************************/
+.blog-cta {
+    font-weight: 500;
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
+}
+.blog-cta::after {
+    content: "";
+    display: inline-block;
+    width: 25%;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 0px;
+       left: 50%;
+    transform: translate(-50%);
+}
+.blog p{margin-top: 28px;}
+.blog-card{width:33%}
+/***************************/
+.instagram{background-image: url(./images/home/Rectangle\ 17.png);
+background-position: center center ;
+background-size: 100% 100%;
+}
+.instagram h3{font-weight: 700;
+
+font-size: 60px;}
+.instagram button{width:255px;
+height:65px;
+border: 0px;
+border-radius: 50px;
+box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
+
+}
+/*****************************home responsive**************************************/
+@media (max-width: 890px) {
+.for-you-card{width:50% !important}
+.foryou{height: auto;}
+/******************/
+
+.blog-card {
+    width: 70%;
+    align-self: center;
+}
+/*********************/
+.sofa img {
+    position: relative;
+   width:50%;
+   height: auto;
+    top: -6%;
+}
+.sofa {
+    text-align: center;
+    background-color: rgba(255, 249, 229, 1);
+    height: auto; 
+    overflow: hidden;
+    padding-block: 5vh;
+}
+
+
+}
+@media (max-width: 650px) {
+.for-you-card{width:100% !important}
+.home-card  {
+    width: 100%;
+}
+
+.home-card ,.blog-card {
+    width: 100%;
+
+}
+}
