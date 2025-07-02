@@ -1,67 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-     <link rel="stylesheet" href="../CSS/bootstrap.min.css">
-     <link rel="stylesheet" href="../CSS/all.min.css">
-     <link rel="stylesheet" href="../CSS/shop.css">
-     
-</head>
-<body>
-    <div class="container-fluid p-0">
-    <div class="header p-5 position-relative ">
-  <!-- Background image with blur -->
-  <div class="bg-blur"></div>
-  
-  <div class="position-relative z-1">
-     <p class="text-center  m-0">
-        <img src="../images/icon.png" style="width: 77px;height:77px;" alt="" class="text-center">
-     </p>
-      
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop Demo</title>
+
+ 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
    
-    <h1 class="text-center ">Shop</h1>
-    <nav class="text-center">
-      <a href="">Home</a>
-      <i class="fa-solid fa-arrow-right mx-2"></i>
-      shop
-    </nav>
-  </div>
-</div>
- <div class="nav  px-5 py-3 bink-color w-100">
-<div class="row d-flex align-content-centent w-100">
-  <div class="col-md-6">
-    <div class="d-flex align-items-center gap-2 ">
-      <img src="../images/Vector (1).png" alt="vector image">
-      <span>Filter</span>
-      <img src="../images/ci_grid-big-round.png" alt="">
-      <img src="../images/bi_view-list.png" alt="">
-      <span class="fs-3">|</span><span>Showing 1–16 of 32 results</span>
-    </div>
-  </div>
+   <link rel="stylesheet" href="../CSS//shop.css">
+</head>
 
-  
-  <div class="col-md-6">
-    <div class="d-flex justify-content-end align-items-center gap-3">
-      <span>Show <span class="bg-white px-2">33</span></span>
-      <span>Sort by <span class="bg-white px-2">default</span></span>
-    </div>
-  </div>
-</div>
-
- </div>    
-      <div class="container  py-2 px-5">
-        <div class="row gy-3" id="row">
-        
+<body>
+  <div class="container-fluid  p-0">
+    <div class="px-5 py-3  bink-color">
+      <div class="row align-items-center  ">
          
+        <div class="col-md-6 d-flex gap-3 align-items-center">
+          <img src="../images/Vector (1).png" alt="filter icon" />
+
+          
+          <span>
+            <label id="filterToggle" style="cursor: pointer;">Filter</label>
+            <span id="categoryContainer" style="display: none;">
+              <select class="rounded-1 border-0" id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="beauty">Beauty</option>
+                <option value="groceries">Groceries</option>
+                <option value="furniture">Furniture</option>
+              </select>
+            </span>
+          </span>
+
+          <img src="../images/ci_grid-big-round.png" alt="grid" />
+          <img src="../images/bi_view-list.png" alt="list" />
+          <span class="fs-3">|</span>
+          <span>Showing&nbsp;<span id="show" class="badge bg-white text-dark"></span>&nbsp;results</span>
+        </div>
+
+       
+        <div class="col-md-6 d-flex justify-content-md-end align-items-center gap-2">
+          <label class="mb-0">Sort by Price</label>
+          <select class="rounded-1 border-0" id="priceSortFilter">
+            <option value="default">Default</option>
+            <option value="asc">Low to High</option>
+            <option value="desc">High to Low</option>
+          </select>
         </div>
       </div>
-      
     </div>
+
+     
+    <main class="container py-4 px-5">
+      <div class="row gy-4" id="row"></div>
+    </main>
+  </div>
  
-    <script src="../Js/shop.js"></script>
-     <script src="../Js/bootstrap.bundle.min.js"></script>
+  
+   
+  <script src="../js/shop.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
