@@ -11,26 +11,34 @@
       }
     }
 
-    function displayData(productList) {
-      const cards = productList
-        .map(
-          (item) => `
-        <div class="col-md-3 mb-4">
-          <div class=" ">
-            <img src="${item.thumbnail}" class="card-img-top" style="height:287px;object-fit:cover" alt="${item.title}">
-            <div class="card-body text-center">
-              <p class="fw-bold mb-1">${item.title}</p>
-              <p class="h5 text-primary mb-0">Rs. ${item.price}</p>
-            </div>
+function displayData(productList) {
+  const cards = productList
+    .map((item) => `
+      <div class="col-md-3 mb-4">
+        <div class="">
+          <img src="${item.thumbnail}" class="card-img-top clickable-image" 
+               style="height:287px;object-fit:cover" alt="${item.title}"
+               data-id="${item.id}">
+          <div class="card-body text-center">
+            <p class="fw-bold mb-1">${item.title}</p>
+            <p class="h5 text-primary mb-0">Rs. ${item.price}</p>
           </div>
-        </div>`
-        )
-        .join("");
+        </div>
+      </div>`)
+    .join("");
 
-      document.getElementById("row").innerHTML = cards;
-    }
+  document.getElementById("row").innerHTML = cards;
 
-    
+   
+  document.querySelectorAll(".clickable-image").forEach(img => {
+    img.addEventListener("click", function() {
+      const productId = this.dataset.id;
+      
+       window.location.href = `Single Product.html?id=${productId}`;
+     
+    });
+  });
+}
     function applyFilters() {
       const categoryVal = document.getElementById("categoryFilter").value;
       const sortVal = document.getElementById("priceSortFilter").value;

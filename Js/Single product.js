@@ -1,5 +1,6 @@
 const params = new URLSearchParams(window.location.search);
 const productId = params.get("id");
+console.log(productId)
 
 fetch(`https://dummyjson.com/products/${productId}`)
   .then((res) => res.json())
@@ -107,10 +108,35 @@ products.forEach((product) => {
 });
 //
 document.querySelector(".btn.btn-dark").addEventListener("click", () => {
+  const quantity = parseInt(document.getElementById("quantityInput").value) || 1;
+  
   fetch(`https://dummyjson.com/products/${productId}`)
     .then((res) => res.json())
     .then((product) => {
-      localStorage.setItem("cartProduct", JSON.stringify(product));
+      // 1. Get existing cart or initialize empty array
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      
+      // 2. Check if product already exists in cart
+      const existingItem = cart.find(item => item.id === product.id);
+      
+      if (existingItem) {
+        // 3. Update quantity if item exists
+        existingItem.quantity += quantity;
+      } else {
+        // 4. Add new item if not in cart
+        cart.push({
+          id: product.id,
+          name: product.title,
+          price: product.price,
+          quantity: quantity,
+          image: product.thumbnail // Optional: for displaying in cart
+        });
+      }
+      
+      // 5. Save back to localStorage
+      localStorage.setItem("cart", JSON.stringify(cart));
+      
+      // 6. Redirect to cart page
       window.location.href = "cart.html";
     });
 });

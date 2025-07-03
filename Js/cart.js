@@ -1,16 +1,7 @@
-// 1. اكتب بيانات الـ cart الأول قبل ما تقرأها
-localStorage.setItem(
-  "cartList",
-  JSON.stringify([
-    { name: "Sofa", price: 5000, quantity: 1 },
-    { name: "Table", price: 3000, quantity: 2 },
-  ])
-);
+ 
+let cartList = JSON.parse(localStorage.getItem("cart")) || [];
 
-// 2. اقرأ بيانات السلة من localStorage بعد الكتابة
-let cartList = JSON.parse(localStorage.getItem("cartList")) || [];
-
-// 3. عناصر المجموع
+ 
 let totalElem = document.getElementById("total");
 let subtotalElem = document.getElementById("subtotal");
 
@@ -18,20 +9,24 @@ function displayCartItems() {
   let table = document.querySelector("table");
   let tableBody = table.querySelector("tbody");
 
-  // لو مفيش tbody، أنشئه
+ 
   if (!tableBody) {
     tableBody = document.createElement("tbody");
     table.appendChild(tableBody);
   }
 
-  // نظف المحتوى قبل العرض
+  
   tableBody.innerHTML = "";
 
   cartList.forEach((item, index) => {
     const row = document.createElement("tr");
-
+   
     row.innerHTML = `
-      <td colspan="2">${item.name}</td>
+      <td colspan="2"> <img src="${item.image}" class="img-fluid mb-2  " style="width:100px" alt="${
+    item.title
+  }" />${item.name} 
+            
+                </td>
       <td>Rs.${item.price}</td>
       <td class="text-center">
         <div class="w-25 border border-black rounded-1">${item.quantity}</div>
@@ -59,9 +54,12 @@ function updateTotals() {
 
 function deleteItem(index) {
   cartList.splice(index, 1);
-  localStorage.setItem("cartList", JSON.stringify(cartList));
+  localStorage.setItem("cart", JSON.stringify(cartList));
   displayCartItems();
 }
 
-// أول مرة تعرض العناصر
+
 displayCartItems();
+document.getElementById('check-out').addEventListener("click",function(){
+  window.location.href =`checkout.html`
+})

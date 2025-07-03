@@ -39,7 +39,7 @@ const NavbarContainer = `
           <a href="#" class="text-dark"
             ><i class="bi bi-heart"><i class="fa-solid fa-heart"></i></i
           ></a>
-          <a href="#" class="text-dark"
+          <a href="../cart.html" class="text-dark"
             ><i class="bi bi-cart"><i class="fa-solid fa-cart-shopping"></i></i
           ></a>
         </div>
