@@ -1,0 +1,39 @@
+.checkout-header {
+  background: url('../images/back\ ground\ checkout.jpg') center/cover no-repeat;
+}
+
+.checkout-header-content {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 40px 0;
+}
+
+.checkout-logo {
+  width: 30px;
+  margin-bottom: 10px;
+}    
+
+    .checkout-box {
+      background-color: #f9f9f9;
+      padding: 40px;
+      border-radius: 10px;
+    }
+    .form-label {
+      font-weight: 500;
+    }
+
+        .info-section {
+      background-color: #fdf9f8;
+      padding: 50px 0;
+    }
+
+    .info-title {
+      font-weight: 600;
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .info-text {
+      color: #888;
+      font-size: 14px;
+      line-height: 1.6;
+    }

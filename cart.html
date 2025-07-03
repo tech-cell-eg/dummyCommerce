@@ -1,0 +1,86 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/Navbar.css" />
+    <link rel="stylesheet" href="css/Footer.css" />
+     <link rel="stylesheet" href="CSS/bootstrap.min.css">
+     <link rel="stylesheet" href="CSS/all.min.css">
+     <link rel="stylesheet" href="CSS/shop.css">
+     
+</head>
+<body>
+        <!-- NAVBAR -->
+    <div id="navbar-container"></div>
+    <div class="container  py-5">
+        <div class="row w-100">
+            <div class="col-md-8">
+                 <table class="w-100">
+        <thead class="bg-warning-subtle ">
+            <th colspan="2">Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>subtotal</th>
+            <th>delete</th>
+        </thead>
+         
+        
+    </table>
+            </div>
+            <div class="col-md-4">
+                <div class="inner bg-warning-subtle text-center pb-5">
+                    <h2>Cart Total</h2>
+                    <p>subtotal:<span id="subtotal"></span></p>
+                    <p>total:<span id="total"></span></p>
+                    <button class="btn btn-transparent border-black px-4">Check Out</button>
+                </div>
+            </div>
+        </div>
+    </div>
+       <!-- footer -->
+    <div id="footer-container"></div>
+    <button
+      onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+      class="btn btn-dark back-to-top"
+      id="backToTop"
+      type="button"
+    >
+      Top
+    </button>
+    <script src="js/Footer.js"></script>
+    <script src="js/Navbar.js"></script>
+    <script>
+      const topButton = document.getElementById("backToTop");
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 200 ||
+          document.documentElement.scrollTop > 200
+        ) {
+          topButton.style.display = "block";
+        } else {
+          topButton.style.display = "none";
+        }
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/cart.js">
+      </body>
+      </html>
