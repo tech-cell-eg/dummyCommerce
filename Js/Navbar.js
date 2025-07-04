@@ -15,24 +15,24 @@ const NavbarContainer = `
         >
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link custom-link" href="home.html">Home</a>
+              <a class="nav-link custom-link" href="../home.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link custom-link" href="shop.html">Shop</a>
+              <a class="nav-link custom-link" href="../shop.html">Shop</a>
             </li>
             <li class="nav-item">
               <a class="nav-link custom-link" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link custom-link" href="pages/contact.hmtl">Contact</a>
+              <a class="nav-link custom-link" href="../pages/contact.hmtl">Contact</a>
             </li>
           </ul>
         </div>
         <div class="d-flex gap-3">
-          <a href="#" class="text-dark"
+          <a href="../pages/contact.html" class="text-dark"
             ><i class="bi bi-person"><i class="fa-solid fa-user-large"></i></i
           ></a>
-          <a href="#" class="text-dark"
+          <a href="../shop.html" class="text-dark"
             ><i class="bi bi-search"
               ><i class="fa-solid fa-magnifying-glass"></i></i
           ></a>
