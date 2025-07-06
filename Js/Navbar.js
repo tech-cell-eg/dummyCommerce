@@ -15,7 +15,7 @@ const NavbarContainer = `
         >
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link custom-link" href="../home.html">Home</a>
+              <a class="nav-link custom-link" href="../index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link custom-link" href="../shop.html">Shop</a>
