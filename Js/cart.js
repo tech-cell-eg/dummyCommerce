@@ -61,5 +61,5 @@ function deleteItem(index) {
 
 displayCartItems();
 document.getElementById('check-out').addEventListener("click",function(){
-  window.location.href =`checkout.html`
+  window.location.href =`../checkout.html`
 })
