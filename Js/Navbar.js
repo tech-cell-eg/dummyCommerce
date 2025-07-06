@@ -21,15 +21,12 @@ const NavbarContainer = `
               <a class="nav-link custom-link" href="../shop.html">Shop</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link custom-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link custom-link" href="../pages/contact.hmtl">Contact</a>
             </li>
           </ul>
         </div>
         <div class="d-flex gap-3">
-          <a href="../pages/contact.html" class="text-dark"
+          <a href="../my-account.html" class="text-dark"
             ><i class="bi bi-person"><i class="fa-solid fa-user-large"></i></i
           ></a>
           <a href="../shop.html" class="text-dark"
