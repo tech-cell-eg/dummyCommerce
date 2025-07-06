@@ -14,7 +14,7 @@ const FooterContainer = `
       <div class="col-md-3">
         <h6 class="footer-heading">Links</h6>
         <ul class="list-unstyled">
-          <li><a href="../home.html" class="footer-link footer-li">Home</a></li>
+          <li><a href="../index.html" class="footer-link footer-li">Home</a></li>
           <li><a href="../shop.html" class="footer-link footer-li">Shop</a></li>
           <li><a href="#" class="footer-link footer-li">About</a></li>
           <li><a href="../pages/contact.html" class="footer-link footer-li">Contact</a></li>
