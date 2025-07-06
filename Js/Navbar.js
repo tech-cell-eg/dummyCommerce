@@ -21,7 +21,7 @@ const NavbarContainer = `
               <a class="nav-link custom-link" href="../shop.html">Shop</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link custom-link" href="../pages/contact.hmtl">Contact</a>
+              <a class="nav-link custom-link" href="../pages/contact.html">Contact</a>
             </li>
           </ul>
         </div>
