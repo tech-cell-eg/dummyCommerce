@@ -279,8 +279,12 @@
           topButton.style.display = "none";
         }
       };
-      document.getElementById("home-cta").addEventListener("click", function () {
-  window.location.href = "shop.html";
+  
+});
+document.querySelectorAll(".home-cta").forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    window.location.href = "shop.html";
+  });
 });
 
     </script>
