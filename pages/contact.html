@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="../CSS/bootstrap.min.css">
-     <link rel="stylesheet" href="../CSS/all.min.css">
+    <link rel="stylesheet" href="../CSS/all.min.css">
+    <link rel="stylesheet" href="css/Navbar.css" />
+    <link rel="stylesheet" href="css/Footer.css" />
 </head>
 <body>
+        <!-- NAVBAR -->
+    <div id="navbar-container"></div>
      <div class="container  m-auto p-5" style="width: 65%;">
         <header class="text-center">
             <h2> Get In Touch With Us</h2>
@@ -45,5 +49,30 @@
                 </div>
             </div>
      </div>
+    <!-- footer -->
+    <div id="footer-container"></div>
+    <button
+      onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+      class="btn btn-dark back-to-top"
+      id="backToTop"
+      type="button"
+    >
+      Top
+    </button>
+        <script src="js/Footer.js"></script>
+    <script src="js/Navbar.js"></script>
+    <script>
+      const topButton = document.getElementById("backToTop");
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 200 ||
+          document.documentElement.scrollTop > 200
+        ) {
+          topButton.style.display = "block";
+        } else {
+          topButton.style.display = "none";
+        }
+      };
+    </script>
 </body>
 </html>
